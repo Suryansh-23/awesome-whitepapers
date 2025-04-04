@@ -32,6 +32,8 @@ Deep dives into automated market makers (AMMs) and DeFi mechanics, focusing on m
 - [SoK: Decentralized Finance (DeFi)](AMM%20%26%20V4/SoK_%20Decentralized%20Finance%20%28DeFi%29%20.pdf)
 - [The Paradox of Just-in-Time Liquidity](AMM%20%26%20V4/The%20Paradox%20of%20Just-in-Time%20Liquidity%20in%20Decentralized.pdf)
 - [What Drives Liquidity on DEXes](AMM%20%26%20V4/What%20Drives%20Liquidity%20on%20Decentralized%20exchange.pdf)
+- [Pendle Finance](AMM%20%26%20V4/Pendle_Finance_Whitepaper.pdf)
+- [Maverick Protocol](AMM%20%26%20V4/Maverick_Protocol_Whitepaper.pdf)
 
 ## Blockchain Protocols
 Core papers defining the fundamental blockchain platforms and their architectures, from Bitcoin to modern Layer 1 solutions.
