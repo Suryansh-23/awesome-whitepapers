@@ -13,6 +13,7 @@ A comprehensive collection of foundational and cutting-edge whitepapers in block
 - [Core DeFi Protocols](#core-defi-protocols)
 - [Data Structures](#data-structures)
 - [EigenLayer Research](#eigenlayer-research)
+- [Ethereum Improvement Proposals (EIPs)](#ethereum-improvement-proposals-eips)
 - [Fully Homomorphic Encryption (FHE)](#fully-homomorphic-encryption-fhe)
 - [MEV Research](#mev-research)
 - [Oracles](#oracles)
@@ -93,6 +94,48 @@ Research papers on restaking, distributed consensus optimization, and protocol f
 - [Prism: Deconstructing the Blockchain](EigenLayer/Prism%20-%20Deconstructing%20the%20Blockchain%20to%20Approach%20Physical%20Limits.pdf)
 - [Themis: Fast, Strong Order-Fairness](EigenLayer/Themis%20-%20Fast%2C%20Strong%20Order-Fairness%20in%20Byzantine%20Consensus.pdf)
 
+## Ethereum Improvement Proposals (EIPs)
+Key standards and innovations that define Ethereum's evolution through EIPs, from core token standards to advanced new capabilities.
+
+### Core Token Standards
+- [ERC-20: Token Standard](https://eips.ethereum.org/EIPS/eip-20) - The foundational fungible token standard for Ethereum | [OpenZeppelin Docs](https://docs.openzeppelin.com/contracts/5.x/erc20)
+- [ERC-721: Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721) - The original NFT standard enabling unique digital assets | [ERC721.org](https://erc721.org/)
+- [ERC-777: Advanced Token Standard](https://eips.ethereum.org/EIPS/eip-777) - Enhanced token standard with hooks and operator functionality | [OpenZeppelin Docs](https://docs.openzeppelin.com/contracts/5.x/erc777)
+- [ERC-1155: Multi Token Standard](https://eips.ethereum.org/EIPS/eip-1155) - Efficient standard for both fungible and non-fungible tokens | [OpenZeppelin Docs](https://docs.openzeppelin.com/contracts/5.x/erc1155)
+
+### Smart Contract Standards
+- [ERC-165: Interface Detection](https://eips.ethereum.org/EIPS/eip-165) - Standard method for detecting supported interfaces | [OpenZeppelin Docs](https://docs.openzeppelin.com/contracts/5.x/api/utils#ERC165)
+- [ERC-173: Contract Ownership](https://eips.ethereum.org/EIPS/eip-173) - Standard interface for contract ownership | [OpenZeppelin Docs](https://docs.openzeppelin.com/contracts/5.x/api/access#Ownable)
+- [ERC-2535: Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535) - Modular smart contract architecture for unlimited contract functionality
+- [ERC-1822: Universal Upgradeable Proxy Standard](https://eips.ethereum.org/EIPS/eip-1822) - Standard for upgradeable contracts | [OpenZeppelin Blog](https://blog.openzeppelin.com/the-state-of-smart-contract-upgrades/)
+
+### Transaction & Protocol Evolution
+- [EIP-2718: Typed Transaction Envelope](https://eips.ethereum.org/EIPS/eip-2718) - Foundational standard defining an extensible envelope for future transaction types | [Ethereum.org Docs](https://ethereum.org/en/developers/docs/transactions/#typed-transactions)
+- [EIP-1559: Fee Market Change](https://eips.ethereum.org/EIPS/eip-1559) - Introduced Type 2 transactions and a new fee market mechanism with base fee burning | [EIP-1559 Paper](https://timroughgarden.org/papers/eip1559.pdf)
+- [EIP-1014: CREATE2](https://eips.ethereum.org/EIPS/eip-1014) - Introduced the `CREATE2` opcode for deterministic contract address creation, enabling counterfactual instantiation and state channels.
+- [EIP-4844: Shard Blob Transactions](https://eips.ethereum.org/EIPS/eip-4844) - Introduced Type 3 transactions carrying "blobs" of data to scale Layer 2 rollups (Proto-Danksharding) | [EIP-4844 Resources](https://www.eip4844.com/)
+- [EIP-3541: EOF - EVM Object Format Meta](https://eips.ethereum.org/EIPS/eip-3541) - Meta EIP for the EVM Object Format, a major upgrade introducing versioned, validated bytecode for improved safety and extensibility | [EOF.org](https://evmobjectformat.org/)
+- [EIP-7702: Set EOA account code for one transaction](https://eips.ethereum.org/EIPS/eip-7702) - Proposal allowing EOAs to temporarily adopt smart contract code for a single transaction, enhancing EOA capabilities towards account abstraction.
+
+#### Account Abstraction
+- [ERC-4337: Account Abstraction](https://eips.ethereum.org/EIPS/eip-4337) - User accounts as smart contracts, enabling gasless transactions, batching, and programmable security | [ERC4337.io](https://www.erc4337.io/) | [Ethereum.org Guide](https://ethereum.org/en/developers/docs/accounts/#account-abstraction)
+- [ERC-6900: Modular Account Standard](https://eips.ethereum.org/EIPS/eip-6900) - Composable, extensible smart contract account architecture | [Awesome Modular Accounts](https://github.com/rhinestonewtf/awesome-modular-accounts)
+- [ERC-7579: Minimal Modular Smart Accounts](https://eips.ethereum.org/EIPS/eip-7579) - Streamlined framework for modular smart contract accounts | [ERC7579.io](https://erc7579.com/)
+
+#### Intent-Based Transactions
+- [ERC-7521: General Intents for Smart Contract Wallets](https://eips.ethereum.org/EIPS/eip-7521) - A generalized intent specification for smart contract wallets, allowing authorization of current and future intent structures at sign time
+- [ERC-6963: Multi-Injected Provider Discovery](https://eips.ethereum.org/EIPS/eip-6963) - Standard for dApps to discover multiple wallet providers
+
+#### Cross-Chain Interoperability
+- [ERC-5164: Cross-Chain Execution](https://eips.ethereum.org/EIPS/eip-5164) - Framework for cross-chain transaction execution
+- [ERC-6120: Universal Token Router](https://eips.ethereum.org/EIPS/eip-6120) - Cross-chain token transfer standard
+- [ERC-7281: xERC-20](https://www.openliquidity.org/research-eips/eip-7281) - Open token standard that solves the security and liquidity problems associated with bridged tokens | [xERC20](https://www.xerc20.com/)
+
+#### Indexing and Data Structures
+- [ERC-3668: CCIP-Read](https://eips.ethereum.org/EIPS/eip-3668) - Off-chain data retrieval with on-chain verification
+- [ERC-4444: Bound Historical Data in Execution Clients](https://eips.ethereum.org/EIPS/eip-4444) - Proposal to limit historical data storage requirements
+- [ERC-7540: Universally Unique Attestation](https://eips.ethereum.org/EIPS/eip-7540) - Standard for blockchain data attestation
+
 ## Fully Homomorphic Encryption (FHE)
 Cutting-edge research on privacy-preserving smart contracts and computation using homomorphic encryption.
 
@@ -139,7 +182,7 @@ Classical finance papers relevant to cryptocurrency markets and DeFi protocol de
 ## Other Papers
 Additional significant papers covering account abstraction, zero-knowledge proofs, and various blockchain innovations.
 
-- [Cairo – a Turing-complete STARK-friendly](Cairo%20%E2%80%93%20a%20Turing-complete%20STARK-friendly.pdf)
+- [Cairo – a Turing-complete STARcriendly](Cairo%20%E2%80%93%20a%20Turing-complete%20STARK-friendly.pdf)
 - [ERC-4337 Account Abstraction](ERC-4337_Account%20Abstraction%20Using%20Alt%20Mempool.pdf)
 - [Lightning Network](lightning-network-paper.pdf)
 - [Lit Protocol Whitepaper (2024)](Lit%20Protocol%20Whitepaper%20%282024%29.pdf)
